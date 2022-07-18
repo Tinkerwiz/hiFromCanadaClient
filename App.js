@@ -6,9 +6,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Button } from 'react-native';
 import { Ionicons } from "@expo/vector-icons";
 
-import HomeScreen from "./screens/HomeScreen";
-import FavoritesScreen from "./screens/FavoritesScreen";
-import ProfileScreen from "./screens/ProfileScreen";
+import HomeScreen from "./src/screens/HomeScreen";
+import FavoritesScreen from "./src/screens/FavoritesScreen";
+import ProfileScreen from "./src/screens/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
 
