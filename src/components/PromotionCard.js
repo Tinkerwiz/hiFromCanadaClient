@@ -9,20 +9,20 @@ function PromotionCard() {
         <Card containerStyle={styles.card}>
             <View style={styles.container}>
                 <Card.Image
-                    style={{display: "block", width: "100px", height: "100px"}}
+                    style={{display: "flex", width: 100, height: 80}}
                     resizeMode="contain"
                     source={{
                         uri: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png',
                     }}
                 />
-                <View style={{width: "60%"}}>
+                <View style={{width: 119}}>
                     <Text style={styles.cardHeader}>
                         Join our English Speaking Club
                     </Text>
+
                     <Button
-                        containerStyle={{width: 'fit-content'}} 
-                        buttonStyle={styles.cardButton} 
-                        titleStyle={styles.cardButtonTitle} 
+                        buttonStyle={styles.cardButton}
+                        titleStyle={styles.cardButtonTitle}
                         title="Join Now!"
                     />
                 </View>
@@ -34,10 +34,10 @@ function PromotionCard() {
 const styles = StyleSheet.create({
     card: {
         backgroundColor: "#DAD2C7",
-        boxShadow: "0px 8px 24px rgba(129, 135, 189, 0.25)",
-        borderRadius: "20px",
-        maxWidth: "335px",
-        height: "205px",
+        boxShadow: "0 8 24 rgba(129, 135, 189, 0.25)",
+        borderRadius: 20,
+        maxWidth: 248,
+        height: 152,
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
@@ -47,27 +47,25 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        gap: "10px"
     },
     cardHeader: {
-        fontFamily: "Poppins, Roboto, Helvetica, Arial, sans-serif",
-        fontWeight: 600,
-        fontSize: "19px",
-        lineHeight: "30px",
-        marginBottom: "12px"
+        fontFamily: "Poppins",
+        fontWeight: "bold",
+        fontSize: 14,
+        lineHeight: 22,
+        marginBottom: 9
     },
     cardButton: {
         backgroundColor: "#5C21B5",
-        borderRadius: "19px",
-        width: "fit-content",
-        paddingHorizontal: "21px",
-        paddingVertical: "5px"
+        borderRadius: 19,
+        paddingVertical: 3,
+        width: "80%"
     },
     cardButtonTitle: {
-        fontFamily: "Poppins, Roboto, Helvetica, Arial, sans-serif",
-        fontWeight: "500",
-        fontSize: 12,
-        lineHeight: "18px"
+        fontFamily: "Poppins",
+        fontWeight: "bold",
+        fontSize: 9,
+        lineHeight: 18,
     }
 });
 
